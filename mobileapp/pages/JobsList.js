@@ -442,7 +442,7 @@ useEffect(() => {
         <Header title="Job Connect" toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         <ScrollView contentContainerStyle={styles.scrollContent}>
           <View style={styles.content}>
-            {<View style={styles.authButtonsContainer}>
+            { <View style={styles.authButtonsContainer}>
               <TouchableOpacity
                 onPress={() => navigation.navigate('Home')}
                 style={[styles.authButton, isDarkMode ? styles.darkAuthButton : styles.lightAuthButton]}

@@ -117,7 +117,7 @@ const SeekerProfile = ({ isDarkMode, toggleDarkMode, route }) => {
         response = await createSeekerProfile(profileData);
         await AsyncStorage.setItem('user', JSON.stringify(response.data.user));
 
-        await AsyncStorage.setItem('token', response.data.token);
+        // await AsyncStorage.setItem('token', response.data.token);
         setUserState(response.data.user);
         setIsAuthenticated(true)
         console.log("userData", userState)
