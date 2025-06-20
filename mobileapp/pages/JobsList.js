@@ -373,7 +373,7 @@ useEffect(() => {
 
     // ✅ same as before:
     try {
-      const response = await axios.post(`http://localhost:5000/api/jobs/apply-job`, {
+      const response = await axios.post(`https://jobconnectqa-2.onrender.com/api`, {
         seekerId: userState._id,
         jobId,
         title: jobTitle,

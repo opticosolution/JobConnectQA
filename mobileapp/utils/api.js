@@ -2,10 +2,14 @@ import axios from 'axios';
 import { Platform } from 'react-native';
 
 // Local backend URL with your IP
-API_URL = "http://localhost:5000/api";
+// API_URL = "http://localhost:5000/api";
 
-const BASE_URL = Platform.OS === 'web' ? 'http://localhost:5000/api' : 'http://192.168.31.124:5000/api';
+// const BASE_URL = Platform.OS === 'web' ? 'http://localhost:5000/api' : 'http://192.168.31.124:5000/api';
+const BASE_URL = Platform.OS === 'web' ? 'https://jobconnectqa-2.onrender.com/api' : 'https://jobconnectqa-2.onrender.com/api';
+API_URL = "https://jobconnectqa-2.onrender.com/api";
 
+
+// const BASE_URL = 'https://jobconnectqa-2.onrender.com'
 // Default axios instance for JSON requests
 const api = axios.create({
   baseURL: BASE_URL,

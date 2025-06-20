@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mobileapp",
-    "slug": "mobileapp",
+    "name": "JobConnect",
+    "slug": "JobConnect",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,7 +16,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.balmukundoptico.mobileapp",
+      "package": "com.opticosolution.mobileappqa",
       "permissions": [
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.WRITE_EXTERNAL_STORAGE",
@@ -27,13 +27,16 @@
         "backgroundColor": "#ffffff"
       }
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "expo-secure-store"
+    ],
     "extra": {
       "eas": {
-        "projectId": "af3df52f-8fc2-453a-9b9e-196169e828d7"
+        "projectId": "eaafdd28-d992-4977-a46a-b21698bcc093"
       }
-    },
-    "owner": "balmukundoptico",
-    "plugins": ["expo-secure-store"]
+    }
   }
 }
