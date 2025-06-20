@@ -160,7 +160,7 @@ export default function SeekerDashboard({ isDarkMode, toggleDarkMode, route }) {
 
   const handleWhatsAppConnect = async (number, jobId, jobTitle) => {
     try {
-      const response = await axios.post(`http://localhost:5000/api/jobs/apply-job`, {
+      const response = await axios.post(`https://jobconnectqa-2.onrender.com/api/jobs/apply-job`, {
         seekerId: user._id,
         jobId: jobId,
         title: jobTitle,
